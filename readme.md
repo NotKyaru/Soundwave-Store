@@ -1,0 +1,2 @@
+# Soundwave Store
+El enfoque de este projecto es dominar la estructura y el diseño web básico, estilos propios, validaciones en formulario. y la colaboración efectiva con herramientas de control de versiones
