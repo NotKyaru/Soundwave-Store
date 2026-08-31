@@ -4,8 +4,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #16324f;
-    background-color: #3d5f7a81;
+    color: #313131;
+    background-color: #d1d5d8;
 }
 header,
 main,
@@ -14,7 +14,8 @@ footer {
 }
 header {
     color: #ffffff;
-    background-color: #dceeff;
+    background-color: #6a7989;
+    border-bottom: 2px solid #3b4550;
 }
 button {
     padding: 0.75rem 1rem;
@@ -43,6 +44,7 @@ list-style: none;
 .menu a,
 .pie-sitio a {
 color: inherit;
+text-decoration: none;
 }
 main {
 max-width: 70rem;
@@ -55,10 +57,12 @@ flex-wrap: wrap;
 flex: 1 1 18rem;
 padding: 1rem;
 background: #ffffff;
+border: 1px solid #b3b3b3;
 }
 img {
 max-width: 100%;
 height: auto;
+border-radius: 0.4rem;
 }
 .salto-contenido {
 position: absolute;
