@@ -7,11 +7,28 @@ body {
     color: #313131;
     background-color: #d1d5d8;
 }
+
+.salto-contenido {
+    position: absolute;
+    left: -10000px;
+}
+
+.salto-contenido:focus {
+    position: static;
+}
+
 header,
 main,
 footer {
     padding: 1.5rem;
 }
+
+main {
+    width: 90%;
+    max-width: 70rem;
+    margin-inline: auto;
+}
+
 header {
     padding: 1.5rem;
     color: #ffffff;
@@ -19,6 +36,71 @@ header {
     background-color: #6a7989;
     border-bottom: 2px solid #2d3f57;
 }
+
+.cabecera-sitio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.marca {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.marca a {
+    display: flex;
+}
+
+.logo-imagen {
+    max-height: 2.5rem;
+    width: auto;
+    filter: drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.8));
+}
+
+.boton-menu {
+    display: inline-block;
+    padding: 0.65rem 0.85rem;
+    font-size: 1.5rem;
+    background-color: #b4b4b4;
+    border: 0.1rem solid #1f4b5b;
+    border-radius: 0.35rem;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    width: 100%;
+}
+
+.menu.menu-abierto {
+    display: flex;
+}
+
+.menu a,
+.pie-sitio a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a[aria-current="page"] {
+    background-color: #4b5866;
+}
+
+.menu ul {
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5rem; 
+    padding: 0; 
+    margin: 1rem 0 0; 
+    list-style: none; 
+    width: 100%;
+}
+
 button {
     padding: 0.75rem 1rem;
     color: #ffffff;
@@ -28,77 +110,61 @@ button {
     cursor: pointer;
 }
 
-.texto-plateado {
-    background: linear-gradient(to bottom, #bebebe 0%, #686666 49%, #808080 50%, #cccccc 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    filter: drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.8));
-}
-
-.cabecera-sitio,
-.menu,
 .grilla-tarjetas {
-display: flex;
-gap: 1rem;
-}
-.cabecera-sitio {
-align-items: center;
-justify-content: space-between;
-}
-.menu {
-padding: 0;
-list-style: none;
-}
-.marca {
-    margin: 0; 
-    display: flex; 
-    align-items: center;
-}
-
-.marca a {
-    display: flex; 
-}
-
-.logo-imagen {
-    max-height: 2.5rem;
-    width: auto; 
-    filter: drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.8)); 
-}
-
-.menu a,
-.pie-sitio a {
-    color: inherit;
-    text-decoration: none;
-}
-main {
-    max-width: 70rem;
-    margin-inline: auto;
-}
-
-.grilla-tarjetas {
-    flex-wrap: wrap;
+display: grid;
+grid-template-columns: 1fr;
+gap: 1.5rem;
 }
 
 .tarjeta {
-    flex: 1 1 18rem;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     background: #ffffff;
     border: 2px solid #b3b3b3;
     border-radius: 0.4rem;
 }
 
+.tarjeta a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    background-color: #2a7f62;
+    border-radius: 0.4rem;
+    text-decoration: none;
+}
+
+.tarjeta a:hover{
+    background-color: #1f5c47;
+}
+
 img {
+    display: block;
     max-width: 100%;
     height: auto;
     border-radius: 0.4rem;
 }
 
-.salto-contenido {
-    position: absolute;
-    left: -10000px;
+@media (min-width: 48rem) {
+    .boton-menu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .grilla-tarjetas {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-.salto-contenido:focus {
-    position: static;
+@media (min-width: 64rem) {
+    .grilla-tarjetas {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

@@ -15,8 +15,17 @@
             <img src="assets/img/logo.png" alt="SoundWave" class="logo-imagen"> <!--ty noxtopp !!!!-->
         </a>
     </h1>
-        <nav aria-label="Navegación principal">
-            <ul class="menu">
+
+    <!--Aca esta el boton para la vista mobil. (Guia 5)-->
+    <button id="boton-menu" class="boton-menu" type="button"
+            aria-label="Abrir o cerrar menu principal"
+            aria-controls="menu-principal"
+            aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+    </button>
+
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <ul class="lista-menu">
                 <li><a href="index.html" aria-current="page">Inicio</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -71,6 +80,8 @@
         <p><small>Proyecto académico · Desarrollo FullStack II</small></p>
         DSY1104 · Desarrollo FullStack II
     </footer>
+
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>
