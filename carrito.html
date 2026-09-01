@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revisa los álbumes en tu carrito de compras en SoundWave">
+    <title>Carrito | SoundWave</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
+    <header class="cabecera-sitio">
+        <h1 class="marca">
+            <a href="inicio.html">
+                <img src="assets/img/logo.png" alt="SoundWave" class="logo-imagen">
+            </a>
+        </h1>
+
+        <button id="boton-menu" class="boton-menu" type="button"
+                aria-label="Abrir o cerrar menu principal"
+                aria-controls="menu-principal"
+                aria-expanded="false">
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <ul class="lista-menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="carrito.html" aria-current="page">Carrito<span class="contador-carrito" id="contador-carrito" hidden>0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <nav class="miga" aria-label="Migas de pan">
+            <a href="inicio.html">Inicio</a>
+            <span aria-hidden="true">›</span>
+            <span>Carrito</span>
+        </nav>
+
+        <h1 class="titulo-producto">Tu carrito de compras</h1>
+
+        <div class="disposicion-carrito">
+            <section class="panel-carrito" aria-labelledby="titulo-articulos">
+                <h2 id="titulo-articulos" class="visualmente-oculto">Álbumes en tu carrito</h2>
+
+                <!-- Las líneas del carrito se generan dinámicamente desde localStorage
+                     (ver assets/js/app.js y assets/js/carrito.js) según el catálogo
+                     definido en assets/js/productos.js. -->
+                <ul class="carrito-lista" id="lista-carrito"></ul>
+
+                <p class="carrito-vacio" id="mensaje-vacio">
+                    Tu carrito está vacío. <a href="tienda.html">Vuelve a la tienda</a> para seguir explorando álbumes.
+                </p>
+
+                <button type="button" id="boton-vaciar" class="carrito-vaciar" hidden>Vaciar carrito</button>
+            </section>
+
+            <aside class="resumen-pedido" aria-labelledby="titulo-resumen">
+                <h2 id="titulo-resumen">Resumen del pedido</h2>
+                <div class="fila-resumen">
+                    <span>Subtotal</span>
+                    <span id="valor-subtotal">$0</span>
+                </div>
+                <div class="fila-resumen">
+                    <span>Envío</span>
+                    <span>Digital · Gratis</span>
+                </div>
+                <div class="fila-resumen fila-total">
+                    <span>Total</span>
+                    <span id="valor-total">$0</span>
+                </div>
+                <a class="boton-carrito boton-pago" href="login.html">Proceder al pago</a>
+                <p class="nota-compra">Ejemplo con fines académicos: esta vista aún no guarda ni procesa pagos reales.</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="pie-sitio">
+        <p><strong>SoundWave © 2026 | Todos los derechos reservados.</strong></p>
+        <address>Contacto: <a href="mailto:SoundWave@SWBusiness.cl">SoundWave@SWBusiness.cl</a></address>
+        <p><small>Proyecto académico · Desarrollo FullStack II</small></p>
+        DSY1104 · Desarrollo FullStack II
+    </footer>
+
+    <script src="assets/js/productos.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
