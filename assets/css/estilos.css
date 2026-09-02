@@ -364,19 +364,23 @@ img {
     color: #2d3f57;
 }
 
-.barra-compra {
+.cta-ficha {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.85rem;
     background: linear-gradient(to bottom, #f4f6f8 0%, #dfe5eb 100%);
+    border: 1px solid #b3b3b3;
+    border-radius: 0.35rem;
 }
 
-.barra-compra h2 {
-    margin: 0 0 0.25rem;
-    font-size: 1.15rem;
+.cta-ficha .precio {
+    align-self: flex-start;
+}
+
+.cta-ficha .boton-carrito {
+    width: 100%;
+    text-align: center;
 }
 
 .acciones-compra {
@@ -689,5 +693,163 @@ img {
 @media (min-width: 64rem) {
     .disposicion-carrito {
         grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* --- Catálogo --- */
+
+.filtros-etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.filtro-etiqueta {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+    color: #2d3f57;
+    background-color: #ffffff;
+    border: 1px solid #b3b3b3;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.filtro-etiqueta:hover {
+    border-color: #2a7f62;
+}
+
+.filtro-etiqueta.activo {
+    color: #ffffff;
+    background-color: #2a7f62;
+    border-color: #2a7f62;
+}
+
+.disposicion-catalogo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.lista-catalogo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fila-catalogo {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    color: inherit;
+    text-decoration: none;
+    background: #ffffff;
+    border: 2px solid #b3b3b3;
+    border-radius: 0.4rem;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.fila-catalogo:hover,
+.fila-catalogo:focus-visible,
+.fila-catalogo.activa {
+    outline: none;
+    border-color: #2a7f62;
+    box-shadow: 0 0 0 2px rgba(42, 127, 98, 0.25);
+}
+
+.fila-portada {
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.fila-titulo {
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
+    color: #2d3f57;
+}
+
+.fila-etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fila-etiquetas li {
+    padding: 0.15rem 0.5rem;
+    font-size: 0.75rem;
+    color: #4b5866;
+    background: #e8edf2;
+    border-radius: 0.3rem;
+}
+
+.fila-precio {
+    margin: 0;
+    font-weight: 700;
+    color: #2d3f57;
+    white-space: nowrap;
+}
+
+.panel-vista-previa {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    background: #ffffff;
+    border: 2px solid #b3b3b3;
+    border-radius: 0.4rem;
+}
+
+.panel-vista-previa .portada-ficha {
+    width: 100%;
+    border-radius: 0.4rem;
+    border: 1px solid #b3b3b3;
+}
+
+.panel-titulo {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #2d3f57;
+}
+
+.panel-pistas {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 1rem 1.15rem;
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.boton-ver-ficha {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    background-color: #2a7f62;
+    border-radius: 0.4rem;
+    text-decoration: none;
+}
+
+.boton-ver-ficha:hover {
+    background-color: #1f5c47;
+}
+
+@media (min-width: 64rem) {
+    .disposicion-catalogo {
+        grid-template-columns: 1.6fr 1fr;
+    }
+
+    .panel-vista-previa {
+        position: sticky;
+        top: 1.5rem;
     }
 }

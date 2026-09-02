@@ -1,1 +1,78 @@
-<!-- a-->>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora el catálogo completo de álbumes de SoundWave">
+    <title>Catálogo | SoundWave</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
+    <header class="cabecera-sitio">
+        <h1 class="marca">
+            <a href="inicio.html">
+                <img src="assets/img/logo.png" alt="SoundWave" class="logo-imagen">
+            </a>
+        </h1>
+
+        <button id="boton-menu" class="boton-menu" type="button"
+                aria-label="Abrir o cerrar menu principal"
+                aria-controls="menu-principal"
+                aria-expanded="false">
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <ul class="lista-menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="carrito.html">Carrito<span class="contador-carrito" id="contador-carrito" hidden>0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <nav class="miga" aria-label="Migas de pan">
+            <a href="inicio.html">Inicio</a>
+            <span aria-hidden="true">›</span>
+            <span>Catálogo</span>
+        </nav>
+
+        <h1 class="titulo-producto">Catálogo completo</h1>
+        <p class="nota-compra">
+            Pasa el mouse (o navega con Tab) sobre un álbum para ver su resumen y la lista de pistas.
+            Haz clic para abrir su ficha completa.
+        </p>
+
+        <div class="filtros-etiquetas" id="filtros-etiquetas" role="group" aria-label="Filtrar por etiqueta">
+            <!-- Los chips de filtro se generan dinámicamente en assets/js/catalogo.js -->
+        </div>
+
+        <div class="disposicion-catalogo">
+            <ul class="lista-catalogo" id="lista-catalogo" aria-label="Álbumes del catálogo">
+                <!-- Las filas se generan dinámicamente desde assets/js/productos.js -->
+            </ul>
+
+            <aside class="panel-vista-previa" id="panel-vista-previa" aria-live="polite" aria-label="Vista previa del álbum">
+                <!-- El contenido se genera dinámicamente en assets/js/catalogo.js -->
+            </aside>
+        </div>
+    </main>
+
+    <footer class="pie-sitio">
+        <p><strong>SoundWave © 2026 | Todos los derechos reservados.</strong></p>
+        <address>Contacto: <a href="mailto:SoundWave@SWBusiness.cl">SoundWave@SWBusiness.cl</a></address>
+        <p><small>Proyecto académico · Desarrollo FullStack II</small></p>
+        DSY1104 · Desarrollo FullStack II
+    </footer>
+
+    <script src="assets/js/productos.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/catalogo.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
