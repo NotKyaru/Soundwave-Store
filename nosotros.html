@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Talleres y actividades de Conecta Cultura">
+    <title>Inicio | SoundWave</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
+    <header class="cabecera-sitio">
+    <h1 class="marca">
+        <a href="inicio.html">
+            <img src="assets/img/logo.png" alt="SoundWave" class="logo-imagen"> <!--ty noxtopp !!!!-->
+        </a>
+    </h1>
+
+    <!--Aca esta el boton para la vista mobil. (Guia 5)-->
+    <button id="boton-menu" class="boton-menu" type="button"
+            aria-label="Abrir o cerrar menu principal"
+            aria-controls="menu-principal"
+            aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+    </button>
+
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <ul class="lista-menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="nosotros.html" aria-current="page">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="carrito.html">Carrito<span class="contador-carrito" id="contador-carrito" hidden>0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido-principal">
+        <section class="presentacion">
+            <p class="etiqueta">La tienda que mueve la ola de la musica</p>
+        </section>
+        <section aria-labelledby="titulo-actividades">
+            <h1 id="titulo-actividades">Canciones Destacadas</h1>
+            <div class="grilla-tarjetas">
+
+                <!-- Article base-->
+                <article class="tarjeta">
+                    <a href="detalle_1.html" class="tarjeta-enlace">
+                        <img src="assets/img/Screenshot_1.png"
+                             alt="Demon Days SM64 Soundfont Cover">
+                        <h3>Demon Days SM64 Soundfont Cover.</h3>
+                    </a>
+                    <a href="detalle_1.html">Detalles álbum</a>
+                </article>
+
+                <!-- Article base-->
+                <article class="tarjeta">
+                    <a href="detalle_2.html" class="tarjeta-enlace">
+                        <img src="assets/img/Screenshot_2.png"
+                             alt="In Utero SM64 Soundfont Cover">
+                        <h3>In Utero SM64 Soundfont Cover.</h3>
+                    </a>
+                    <a href="detalle_2.html">Detalles álbum</a>
+                </article>
+
+                <article class="tarjeta">
+                    <a href="detalle_3.html" class="tarjeta-enlace">
+                        <img src="assets/img/Screenshot_3.png"
+                             alt="Nevermind SM64 Soundfont">
+                        <h3>Nevermind SM64 Soundfont Cover.</h3>
+                    </a>
+                    <a href="detalle_3.html">Detalles álbum</a>
+                </article>
+
+                <article class="tarjeta">
+                    <a href="detalle_4.html" class="tarjeta-enlace">
+                        <img src="assets/img/Screenshot_4.png"
+                             alt="Facelift SM64 Soundfont Cover">
+                        <h3>Facelift SM64 Soundfont Cover.</h3>
+                    </a>
+                    <a href="detalle_4.html">Detalles álbum</a>
+                </article>
+
+                <article class="tarjeta">
+                    <a href="detalle_5.html" class="tarjeta-enlace">
+                        <img src="assets/img/Screenshot_5.png"
+                             alt="Super Black Parade 64 Soundfont Cover">
+                        <h3>Super Black Parade 64 Soundfont Cover.</h3>
+                    </a>
+                    <a href="detalle_5.html">Detalles álbum</a>
+                </article>
+
+                <article class="tarjeta">
+                    <a href="detalle_6.html" class="tarjeta-enlace">
+                        <img src="assets/img/Screenshot_6.png"
+                             alt="...And Justice for All SM64 Soundfont Cover">
+                        <h3>...And Justice for All SM64 Soundfont Cover.</h3>
+                    </a>
+                    <a href="detalle_6.html">Detalles álbum</a>
+                </article>
+
+            </div>
+        </section>
+        <aside class="aviso" aria-labelledby="titulo-aviso">
+            <h2 id="titulo-aviso">¿No encuentras lo que buscas ? </h2>
+            <p>Hablanos al correo para solicitar tus canciones favoritas.</p>
+        </aside>
+    </main>
+    <footer class="pie-sitio">
+        <p><strong>SoundWave © 2026 | Todos los derechos reservados.</strong></p>
+        <address>Contacto: <a
+            href="mailto:SoundWave@SWBusiness.cl">SoundWave@SWBusiness.cl</a></address>
+        <p><small>Proyecto académico · Desarrollo FullStack II</small></p>
+        DSY1104 · Desarrollo FullStack II
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
