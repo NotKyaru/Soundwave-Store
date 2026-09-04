@@ -174,6 +174,91 @@ button {
     text-decoration: underline;
 }
 
+/* ==========================================================================
+   FILAS DE NOTICIAS (Blog - Mobile First)
+   ========================================================================== */
+.lista-noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.tarjeta-noticia {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background: #ffffff;
+    border: 2px solid #b3b3b3;
+    border-radius: 0.4rem;
+}
+
+.noticia-miniatura {
+    display: block;
+    width: 100%;
+}
+
+.noticia-miniatura img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+}
+
+.noticia-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.noticia-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.noticia-info h3 a {
+    color: #183044;
+    text-decoration: none;
+}
+
+.noticia-info h3 a:hover {
+    text-decoration: underline;
+}
+
+.noticia-info p {
+    margin: 0;
+    line-height: 1.4;
+    color: #526575;
+}
+
+.noticia-info .etiqueta {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #2a7f62;
+    text-transform: uppercase;
+}
+
+.boton-leer {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2a7f62;
+    border: 1px solid #1f5c47;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton-leer:hover {
+    background-color: #1f5c47;
+}
+
 .contador-carrito {
     display: inline-block;
     min-width: 1.35rem;
@@ -238,8 +323,18 @@ img {
     .grilla-tarjetas {
         grid-template-columns: 1fr 1fr;
     }
-}
 
+    /* Noticias en fila para pantallas medianas y grandes */
+    .tarjeta-noticia {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .noticia-miniatura {
+        width: 14rem;
+        flex-shrink: 0;
+    }
+}
 
 @media (min-width: 64rem) {
     .grilla-tarjetas {

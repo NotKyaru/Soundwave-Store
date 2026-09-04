@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Talleres y actividades de Conecta Cultura">
+    <title>Blog | SoundWave</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
+    <header class="cabecera-sitio">
+    <h1 class="marca">
+        <a href="inicio.html">
+            <img src="assets/img/logo.png" alt="SoundWave" class="logo-imagen"> <!--ty noxtopp !!!!-->
+        </a>
+    </h1>
+
+    <button id="boton-menu" class="boton-menu" type="button"
+            aria-label="Abrir o cerrar menu principal"
+            aria-controls="menu-principal"
+            aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+    </button>
+
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <ul class="lista-menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html" aria-current="page">Blog</a></li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="carrito.html">Carrito<span class="contador-carrito" id="contador-carrito" hidden>0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido-principal">
+        <section class="presentacion">
+            <p class="etiqueta">¿Que esta ocurriendo?</p>
+            <h1>Noticias de la comunidad<h1>
+        </section>
+
+        <section aria-labelledby="titulo-noticias">
+            <h2 id="titulo-noticias">Sucesos recientes</h2>
+            
+            <div class="lista-noticias">
+
+                <article class="tarjeta-noticia">
+                    <a href="noticia-detalle-1.html" class="noticia-miniatura">
+                        <img src="assets/img/noticia-1.png"
+                             alt="Noticia N1">
+                    </a>
+                    <div class="noticia-info">
+                        <p class="etiqueta"><time datetime="2026-08-28">28 de agosto de 2026</time></p>
+                        <h3><a href="noticia-detalle-1.html">Miembro local de la comunidad abre un canal de ayuda para laburar</a></h3>
+                        <p>Nuestro conocido miembro y actualmente "youtuber" de excelencia Andres Sagredo, ha empezado a subir
+                             video-tutoriales con las ayudas necesarias referentes al ambito laboral.</p>
+                        <a class="boton-leer" href="noticia-detalle-1.html">Leer noticia completa</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-noticia">
+                    <a href="noticia-detalle-2.html" class="noticia-miniatura">
+                        <img src="assets/img/noticia-2.png"
+                             alt="Noticia N2">
+                    </a>
+                    <div class="noticia-info">
+                        <p class="etiqueta"><time datetime="2026-08-28">23 de agosto de 2026</time></p>
+                        <h3><a href="noticia-detalle-2.html">Se ha registrado un aumento en el porcentaje de compra anual en guitarras electricas</a></h3>
+                        <p>Fiebre de las cuerdas! Han aparecido las muestras del proyecto comunitario en base a la compra y
+                             venta de instrumentos y herramientas musicales.</p>
+                        <a class="boton-leer" href="noticia-detalle-2.html">Leer noticia completa</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-noticia">
+                    <a href="noticia-detalle-3.html" class="noticia-miniatura">
+                        <img src="assets/img/noticia-3.png"
+                             alt="Noticia N3">
+                    </a>
+                    <div class="noticia-info">
+                        <p class="etiqueta"><time datetime="2026-08-28">18 de agosto de 2026</time></p>
+                        <h3><a href="noticia-detalle-3.html">Se rumorea que el artista chileno "Sadik" este a punto de 
+                            colaborar con el rapero "Yuno Miles"</a></h3>
+                        <p>Chile en la USA! El rapero estadounidense "Yuno Miles" ha enfocado su atencion en un artista emergente; "Sadik". Dicho 
+                            por el mismo "Sadik", "ns q hice hrmn, el negrito esta riko si. fijate en el tono... de piel."
+                        </p>
+                        <a class="boton-leer" href="noticia-detalle-3.html">Leer noticia completa</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-noticia">
+                    <a href="noticia-detalle-4.html" class="noticia-miniatura">
+                        <img src="assets/img/noticia-4.png"
+                             alt="Noticia N4">
+                    </a>
+                    <div class="noticia-info">
+                        <p class="etiqueta"><time datetime="2026-08-28">13 de agosto de 2026</time></p>
+                        <h3><a href="noticia-detalle-4.html">Artista de talla mundial asume el cargo de presidente de la republica</a></h3>
+                        <p>El artista urbano haitiano-chileno "Flaitiano" asume la maxima responsabilidad despues de moggear al presidente Jose Antonio Kast.</p>
+                        <a class="boton-leer" href="noticia-detalle-4.html">Leer noticia completa</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <aside class="aviso" aria-labelledby="titulo-aviso">
+            <h2 id="titulo-aviso">¿No encuentras lo que buscas? </h2>
+            <p>Hablanos al correo para solicitar tus canciones favoritas.</p>
+        </aside>
+    </main>
+    <footer class="pie-sitio">
+        <p><strong>SoundWave © 2026 | Todos los derechos reservados.</strong></p>
+        <address>Contacto: <a
+            href="mailto:SoundWave@SWBusiness.cl">SoundWave@SWBusiness.cl</a></address>
+        <p><small>Proyecto académico · Desarrollo FullStack II</small></p>
+        DSY1104 · Desarrollo FullStack II
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
