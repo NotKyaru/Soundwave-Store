@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inicia sesión en tu cuenta de Soundwave Store">
+  <title>Iniciar Sesión | Soundwave Store</title>
+  
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera-sitio">
+    <a class="marca" href="inicio.html">Soundwave Store</a>
+  </header>
+
+  <main id="contenido-principal">
+    <header class="encabezado-pagina">
+      <h1>Iniciar Sesión</h1>
+    </header>
+    
+    <form id="formulario-login" class="formulario" novalidate>
+      <fieldset>
+        <legend>Tus credenciales</legend>
+        <div class="campo-formulario">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" aria-describedby="error-correo">
+          <small id="error-correo" class="mensaje-error"></small>
+        </div>
+        <div class="campo-formulario">
+          <label for="contrasena">Contraseña</label>
+          <input id="contrasena" name="contrasena" type="password" aria-describedby="error-contrasena">
+          <small id="error-contrasena" class="mensaje-error"></small>
+        </div>
+      </fieldset>
+      <button type="submit" class="boton">Ingresar</button>
+      <p id="mensaje-login" role="status"></p>
+    </form>
+  </main>
+
+  <footer class="pie-sitio">
+    <p>Soundwave Store</p>
+  </footer>
+
+  <script src="assets/js/login.js"></script>
+
+</body>
+</html>

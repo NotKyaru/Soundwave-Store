@@ -1054,3 +1054,26 @@ img {
         top: 1.5rem;
     }
 }
+
+/* Estilos para los errores del formulario */
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.mensaje-error {
+  display: block;
+  color: #b42318;
+  min-height: 1.25rem;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.campo-invalido {
+  border: 0.15rem solid #b42318;
+}
+
+.campo-invalido:focus {
+  outline: 0.2rem solid #f4a6a0;
+}
