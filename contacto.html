@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ponte en contacto con Soundwave Store">
+  <title>Contacto | Soundwave Store</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+  <!-- Cabecera básica (puedes ajustarla a la de tu proyecto) -->
+  <header class="cabecera-sitio">
+    <a class="marca" href="inicio.html">Soundwave Store</a>
+  </header>
+
+  <main id="contenido-principal">
+    <header class="encabezado-pagina">
+      <h1>Contáctanos</h1>
+      <p>Envíanos tus dudas o consultas y te responderemos a la brevedad.</p>
+    </header>
+    
+    <!-- Formulario con novalidate -->
+    <form id="formulario-contacto" class="formulario" novalidate>
+      <fieldset>
+        <legend>Formulario de Contacto</legend>
+        
+        <div class="campo-formulario">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" maxlength="50" aria-describedby="error-nombre">
+          <small id="error-nombre" class="mensaje-error"></small>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" aria-describedby="error-correo">
+          <small id="error-correo" class="mensaje-error"></small>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="mensaje">Tu mensaje</label>
+          <!-- Se exige un textarea con minlength y maxlength en las guías -->
+          <textarea id="mensaje" name="mensaje" rows="5" minlength="20" maxlength="500" aria-describedby="error-mensaje"></textarea>
+          <small id="error-mensaje" class="mensaje-error"></small>
+        </div>
+
+      </fieldset>
+      
+      <button type="submit" class="boton">Enviar mensaje</button>
+      <p id="mensaje-exito" role="status"></p>
+    </form>
+  </main>
+
+  <footer class="pie-sitio">
+    <p>Soundwave Store</p>
+  </footer>
+
+  <!-- Enlace al JS específico de contacto -->
+  <script src="assets/js/contacto.js"></script>
+
+</body>
+</html>
