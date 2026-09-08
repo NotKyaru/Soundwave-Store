@@ -15,7 +15,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 129990,
         descripcion: "Tapa de abeto, aros y fondo de meranti. Ideal para iniciantes.",
         imagen: "https://www.thomann.de/thumb/opengraph/pics/prod/161205.jpg",
-        detalle: "instrumento_GA001.html",
+        detalle: "instrumentos/instrumento_GA001.html",
         formato: "Yamaha · F310"
     },
     {
@@ -29,7 +29,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 189990,
         descripcion: "Tapa de abeto macizo, brazo de caoba. Sonido cálido y proyectado.",
         imagen: "https://media.sweetwater.com/m/products/image/8726994443BN5PPImc09W96VhvBNy83AAdJPcStZ.png?ha=87269944434e9ff236424850a84d20d350389d80&quality=82&width=750",
-        detalle: "instrumento_GA002.html",
+        detalle: "instrumentos/instrumento_GA002.html",
         formato: "Fender · CD-60S"
     },
     {
@@ -43,7 +43,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 89990,
         descripcion: "Nailon, tapa de abeto. Ideal para estudio y flamenco.",
         imagen: "https://www.thomann.de/thumb/opengraph/pics/prod/247286.jpg",
-        detalle: "instrumento_GA003.html",
+        detalle: "instrumentos/instrumento_GA003.html",
         formato: "Yamaha · C40"
     },
     {
@@ -57,7 +57,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 349990,
         descripcion: "Pickup integrado, afinador incorporado.",
         imagen: "https://media.sweetwater.com/m/products/image/107ed21c78eph5Or02kXWZjan5xk5ytGHiU5MtpL.png?ha=107ed21c787ab21fa9a5c73c10d2e6a935e71650&quality=82&width=750",
-        detalle: "instrumento_GA004.html",
+        detalle: "instrumentos/instrumento_GA004.html",
         formato: "Takamine · GN20CE"
     },
     {
@@ -71,7 +71,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 79990,
         descripcion: "Tamaño reducido para niños de 6 a 10 años.",
         imagen: "https://www.thomann.de/thumb/opengraph/pics/prod/145077.jpg",
-        detalle: "instrumento_GA005.html",
+        detalle: "instrumentos/instrumento_GA005.html",
         formato: "Yamaha · JR1"
     },
     {
@@ -85,7 +85,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 249990,
         descripcion: "Cuerpo de álamo, mástil de arce, pastillas SSS.",
         imagen: "https://media.sweetwater.com/m/products/image/23829838e0EMDaQvhUfi890se4S4Nq6PsZvjwDRE.png?ha=23829838e056b8e15f2cba6a182c2f25fed2eab5&quality=82&width=750",
-        detalle: "instrumento_GE001.html",
+        detalle: "instrumentos/instrumento_GE001.html",
         formato: "Squier · Affinity Strat"
     },
     {
@@ -99,7 +99,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 329990,
         descripcion: "Cuerpo caoba, tapa arce, pastillas humbucker.",
         imagen: "https://media.sweetwater.com/m/products/image/f0574d0d74C8FQTyPWAgv0hMQyemBYU1q13Bnjtm.png?ha=f0574d0d74453af8ca8f7c5628600cb6b754b69b&quality=82&width=750",
-        detalle: "instrumento_GE002.html",
+        detalle: "instrumentos/instrumento_GE002.html",
         formato: "Epiphone · Les Paul Std"
     },
     {
@@ -113,7 +113,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 319990,
         descripcion: "Cuerpo caoba, mástil caoba, 2 humbuckers.",
         imagen: "https://media.sweetwater.com/m/products/image/67feb8a8c23l2BkzlrmL564cb7XvpwZiX46uAKGd.png?ha=67feb8a8c25742cac8054e73a497b232bdaceaec&quality=82&width=750",
-        detalle: "instrumento_GE003.html",
+        detalle: "instrumentos/instrumento_GE003.html",
         formato: "Epiphone · SG Standard"
     },
     {
@@ -127,7 +127,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 239990,
         descripcion: "Cuerpo álamo, clavijero vintage, 2 pastillas single.",
         imagen: "https://media.sweetwater.com/m/products/image/56e8a21efaJvxMGwXTEqLZ17uvFhVYOUXLbeke0t.png?ha=56e8a21efabb446bafa478b125c10123a4372dc1&quality=82&width=750",
-        detalle: "instrumento_GE004.html",
+        detalle: "instrumentos/instrumento_GE004.html",
         formato: "Squier · Affinity Tele"
     },
     {
@@ -141,7 +141,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 549990,
         descripcion: "Semi-hueca, 2 humbuckers, ideal para jazz y blues.",
         imagen: "https://media.sweetwater.com/m/products/image/42b0c0876eIPz0XCqrs4RxWVYstdMbT3EANp8UIW.png?ha=42b0c0876e6f0a22125007efb44b421421b95af9&quality=82&width=750",
-        detalle: "instrumento_GE005.html",
+        detalle: "instrumentos/instrumento_GE005.html",
         formato: "Epiphone · ES-335"
     },
     {
@@ -155,7 +155,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 299990,
         descripcion: "Pickup PJ, cuerpo álamo, mástil arce.",
         imagen: "https://media.sweetwater.com/m/products/image/6028728022f5vVDMZxLgw0Z8RcTpAY7JdOz53hBR.png?ha=6028728022bd16d63fde3722ed5652af398a4c04&quality=82&width=750",
-        detalle: "instrumento_BA001.html",
+        detalle: "instrumentos/instrumento_BA001.html",
         formato: "Squier · Affinity PJ"
     },
     {
@@ -169,7 +169,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 699990,
         descripcion: "Alder body, 2 Alnico V Jazz single-coil.",
         imagen: "https://media.sweetwater.com/m/products/image/f439f9d01f2PM2sr8SIS46eTXf2zrqXZ20yu2Siv.png?ha=f439f9d01f86fba82d9f536391a2625bb19f6783&quality=82&width=750",
-        detalle: "instrumento_BA002.html",
+        detalle: "instrumentos/instrumento_BA002.html",
         formato: "Fender · Player Jazz"
     },
     {
@@ -183,7 +183,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 429990,
         descripcion: "Electroacústico, afinador incorporado.",
         imagen: "https://media.sweetwater.com/m/products/image/163dfc6144dLFfh5R7Ahhb4Wm6S5rNsPqxBdGGP3.png?ha=163dfc61449a6c99eb31996ea9f678fb35fc7098&quality=82&width=750",
-        detalle: "instrumento_BA003.html",
+        detalle: "instrumentos/instrumento_BA003.html",
         formato: "Yamaha · APX700II"
     },
     {
@@ -197,7 +197,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 599990,
         descripcion: "Incluye stands, platillos y pedal de bombo.",
         imagen: "https://media.sweetwater.com/m/products/image/7b07f0e056WBSrfEKypvR0eqNhmFwiCu24p9cIY1.jpg?ha=7b07f0e0564711158539de0dc7ec4162c8237372&quality=82&width=750",
-        detalle: "instrumento_BT001.html",
+        detalle: "instrumentos/instrumento_BT001.html",
         formato: "Pearl · Roadshow"
     },
     {
@@ -211,7 +211,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 799990,
         descripcion: "Módulo TD-02, 8 pads de goma, pedal hi-hat.",
         imagen: "https://media.sweetwater.com/m/products/image/e38ce50c0bMJIZkRrjBLKAGJzne2zN0MKDWsA5U6.png?ha=e38ce50c0bff18341a9e5b62936ac245cf568d35&quality=82&width=750",
-        detalle: "instrumento_BT002.html",
+        detalle: "instrumentos/instrumento_BT002.html",
         formato: "Roland · TD-02KV"
     },
     {
@@ -225,7 +225,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 89990,
         descripcion: "Acero, 14x5\", 10 tensores.",
         imagen: "https://media.sweetwater.com/m/products/image/b32d3594b2XaAGshu1kpPyUnYLpp9UyilS2Iv0xi.jpg?ha=b32d3594b2214ade18596f50ade6c6005e34c5f8&quality=82&width=750",
-        detalle: "instrumento_BT003.html",
+        detalle: "instrumentos/instrumento_BT003.html",
         formato: "Pearl · STE1450"
     },
     {
@@ -239,7 +239,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 149990,
         descripcion: "Latón B20, sonido brillante y claro.",
         imagen: "https://media.sweetwater.com/m/products/image/62b563c221Wnh1aroetYt4V8kdZlckxl9kGQHC29.jpg?ha=62b563c221ec84dfe2a8a8a9d73a6035993498e9&quality=82&width=750",
-        detalle: "instrumento_BT004.html",
+        detalle: "instrumentos/instrumento_BT004.html",
         formato: "Zildjian · A Series"
     },
     {
@@ -253,7 +253,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 129990,
         descripcion: "Latón B20, ataque rápido.",
         imagen: "https://media.sweetwater.com/m/products/image/90762709f3LYES9sC0zRyXEVYiXfOTvrBVTYCXyu.jpg?ha=90762709f398a5160903b40520ca200de7647a54&quality=82&width=750",
-        detalle: "instrumento_BT005.html",
+        detalle: "instrumentos/instrumento_BT005.html",
         formato: "Zildjian · A Series"
     },
     {
@@ -267,7 +267,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 249990,
         descripcion: "61 teclas sensibles al tacto, 622 voces.",
         imagen: "https://usa.yamaha.com/files/PSR-EW373_thumbnail-gradient_18b80a0faff3709fe5c1bc487e1bacff.jpg",
-        detalle: "instrumento_TC001.html",
+        detalle: "instrumentos/instrumento_TC001.html",
         formato: "Yamaha · PSR-E373"
     },
     {
@@ -281,7 +281,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 499990,
         descripcion: "88 teclas pesadas, 10 voces, pedal sustain incluido.",
         imagen: "https://media.sweetwater.com/m/products/image/d2a66193e7yE3kXgDXTI4t9GJQktyt1WZXPow7T7.jpg?ha=d2a66193e714896043e62f8f977f115c303bc2e6&quality=82&width=750",
-        detalle: "instrumento_TC002.html",
+        detalle: "instrumentos/instrumento_TC002.html",
         formato: "Yamaha · P-45"
     },
     {
@@ -295,7 +295,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 129990,
         descripcion: "MIDI controller, 49 mini teclas.",
         imagen: "https://media.guitarcenter.com/is/image/MMGS7/J48523000000000-00-600x600.jpg",
-        detalle: "instrumento_TC003.html",
+        detalle: "instrumentos/instrumento_TC003.html",
         formato: "Arturia · MiniLab MKII"
     },
     {
@@ -309,7 +309,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 399990,
         descripcion: "88 teclas martillo, sin sonidos propios.",
         imagen: "https://media.sweetwater.com/m/products/image/377e8fcb1aj50vHHKiwe6H0yTGGDpamlxT8O9cKd.jpg?ha=377e8fcb1a0308f0b33a851523f67fc800ab1183&quality=82&width=750",
-        detalle: "instrumento_TC004.html",
+        detalle: "instrumentos/instrumento_TC004.html",
         formato: "M-Audio · Hammer 88"
     },
     {
@@ -323,7 +323,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 99990,
         descripcion: "15W, distorsión incorporada, entrada auxiliar.",
         imagen: "https://media.sweetwater.com/api/i/version-9b158ba0baf5e50a42b9596519afa5640d30fa92__q-82__w-750__hmac-9298db3e13171e5228e071ade50d0f03c24ae146/images/items/750/Frontman15G-large.jpg",
-        detalle: "instrumento_AM001.html",
+        detalle: "instrumentos/instrumento_AM001.html",
         formato: "Fender · Frontman 15G"
     },
     {
@@ -337,7 +337,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 299990,
         descripcion: "40W, 4 canales, efectos digitales integrados.",
         imagen: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_42/422019/15763385_800.jpg",
-        detalle: "instrumento_AM002.html",
+        detalle: "instrumentos/instrumento_AM002.html",
         formato: "Marshall · MG40GFX"
     },
     {
@@ -351,7 +351,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 449990,
         descripcion: "100W, tweeter integrado, ecualizador de 4 bandas.",
         imagen: "https://ik.imagekit.io/616tpia3u/HD150_HO.jpg",
-        detalle: "instrumento_AM003.html",
+        detalle: "instrumentos/instrumento_AM003.html",
         formato: "Hartke · HD100"
     },
     {
@@ -365,7 +365,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 499990,
         descripcion: "60W, 2 canales, reverb y chorus incorporados.",
         imagen: "https://fishman.com/wp-content/uploads/2025/01/fishman-loudbox-mini-acoustic-pickup-hero-1800.jpg",
-        detalle: "instrumento_AM004.html",
+        detalle: "instrumentos/instrumento_AM004.html",
         formato: "Fishman · Loudbox Mini"
     },
     {
@@ -379,7 +379,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 149990,
         descripcion: "Estándar industria para voz en vivo.",
         imagen: "https://media.sweetwater.com/m/products/image/41c864ed11uImX0bYwIbu8PpOQzuc7MmwEGIhvSJ.jpg?ha=41c864ed115a4baa83a26f1b6eb26288efce8985&quality=82&width=750",
-        detalle: "instrumento_MI001.html",
+        detalle: "instrumentos/instrumento_MI001.html",
         formato: "Shure · SM58"
     },
     {
@@ -393,7 +393,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 139990,
         descripcion: "Ideal para captura de instrumentos y amplificadores.",
         imagen: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_10/105768/7930429_800.jpg",
-        detalle: "instrumento_MI002.html",
+        detalle: "instrumentos/instrumento_MI002.html",
         formato: "Shure · SM57"
     },
     {
@@ -407,7 +407,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 199990,
         descripcion: "Cardioide, XLR, ideal para grabación en estudio.",
         imagen: "https://www.audio-technica.com/media/converted/resized/f58b029c513f90a808b472e4e0ce3726/1000x1000/catalog/product/a/t/at2020_01a1x.webp",
-        detalle: "instrumento_MI003.html",
+        detalle: "instrumentos/instrumento_MI003.html",
         formato: "Audio-Tech. · AT2020"
     },
     {
@@ -421,7 +421,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 299990,
         descripcion: "USB, 4 patrones polares, ideal para streaming y podcast.",
         imagen: "https://media.sweetwater.com/m/products/image/74fc4eaca1lrWPbpvXXR4ymVRbQlSCfUJFOr2fkm.jpg?ha=74fc4eaca12a63956f291b907561d601b1bcd046&quality=82&width=750",
-        detalle: "instrumento_MI004.html",
+        detalle: "instrumentos/instrumento_MI004.html",
         formato: "Blue · Yeti"
     },
     {
@@ -435,7 +435,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 79990,
         descripcion: "Clásico pedal de distorsión, 3 controles.",
         imagen: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_10/102371/7536163_800.jpg",
-        detalle: "instrumento_PE001.html",
+        detalle: "instrumentos/instrumento_PE001.html",
         formato: "Boss · DS-1"
     },
     {
@@ -449,7 +449,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 179990,
         descripcion: "8 modos de reverb, control de shimmer.",
         imagen: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_36/368461/10144407_800.jpg",
-        detalle: "instrumento_PE002.html",
+        detalle: "instrumentos/instrumento_PE002.html",
         formato: "Boss · RV-6"
     },
     {
@@ -463,7 +463,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 349990,
         descripcion: "Diseño tipo pedalboard, 8 efectos simultáneos.",
         imagen: "https://cf1.zzounds.com/media/productmedia/fit%2C2018by3200/quality%2C85/me-80_top_gal-c25436726ac39708acfa3db521b7587a.jpg",
-        detalle: "instrumento_PE003.html",
+        detalle: "instrumentos/instrumento_PE003.html",
         formato: "Boss · ME-80"
     },
     {
@@ -477,7 +477,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 89990,
         descripcion: "Afinador cromático, indicador de tono.",
         imagen: "https://www.altomusic.com/cdn/shop/files/10013350_279d8da2-37ab-4cfe-993f-d296c9dde558.jpg?v=1762891432",
-        detalle: "instrumento_PE004.html",
+        detalle: "instrumentos/instrumento_PE004.html",
         formato: "Boss · TU-3"
     },
     {
@@ -491,7 +491,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 179990,
         descripcion: "Delay analógico cálido, tiempo 600ms.",
         imagen: "https://media.sweetwater.com/m/products/image/bd9ecaa2a9OVDQxT2pXDaMF39beONwfOOF6lAhFu.jpg?ha=bd9ecaa2a9c62d0a258e6a1b4516dca21c4c866e&quality=82&width=750",
-        detalle: "instrumento_PE005.html",
+        detalle: "instrumentos/instrumento_PE005.html",
         formato: "MXR · Carbon Copy"
     },
     {
@@ -505,7 +505,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 99990,
         descripcion: "Tube Screamer clásico, sonido suave y orgánico.",
         imagen: "https://media.sweetwater.com/m/products/image/29a2414665T6pyenFpcASI7sBWwbVbS9ucJiSa6v.jpg?ha=29a2414665765b3773d22e551ff6429c8381ad32&quality=82&width=750",
-        detalle: "instrumento_PE006.html",
+        detalle: "instrumentos/instrumento_PE006.html",
         formato: "Ibanez · TS9"
     },
     {
@@ -519,7 +519,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 8990,
         descripcion: "Juego 6 cuerdas, calibre ligero.",
         imagen: "https://media.sweetwater.com/m/products/image/22f81adb6b2632u9tXcFifx7cpMzoXsxfTZTJI66.jpg?ha=22f81adb6b2457273eeb55c6e5689e4739d2ffb7&quality=82&width=750",
-        detalle: "instrumento_AC001.html",
+        detalle: "instrumentos/instrumento_AC001.html",
         formato: "Ernie Ball · Super Slinky"
     },
     {
@@ -533,7 +533,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 10990,
         descripcion: "Bronce fósforo, sonido cálido.",
         imagen: "https://media.sweetwater.com/m/products/image/20925de8ecHt0q7gKFCi3dUbqvSmLB1eLnMkE4xN.jpg?ha=20925de8ec4aa33d14b10f546acb347109a73f8d&quality=82&width=750",
-        detalle: "instrumento_AC002.html",
+        detalle: "instrumentos/instrumento_AC002.html",
         formato: "Ernie Ball · Earthwood"
     },
     {
@@ -547,7 +547,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 14990,
         descripcion: "Cuerdas de níquel enrollado, set 4 cuerdas.",
         imagen: "https://media.sweetwater.com/m/products/image/b18fefdec60jreO0zevDH4379Ce8qhUzi9CewdGs.jpg?ha=b18fefdec6da18ff2ee34294e021cc7711693902&quality=82&width=750",
-        detalle: "instrumento_AC003.html",
+        detalle: "instrumentos/instrumento_AC003.html",
         formato: "Ernie Ball · Regular Slinky"
     },
     {
@@ -561,7 +561,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 3990,
         descripcion: "Celulosa, grosor medio.",
         imagen: "https://media.sweetwater.com/m/products/image/542ed9a047LVPqxTxLwW8v5D4oZuFNJDxuldfO54.jpg?ha=542ed9a047a57ee5c298b6a28affae6165e58d58&quality=82&width=750",
-        detalle: "instrumento_AC004.html",
+        detalle: "instrumentos/instrumento_AC004.html",
         formato: "Fender · 351"
     },
     {
@@ -575,7 +575,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 12990,
         descripcion: "Capotraste de resorte, compatible 6 cuerdas.",
         imagen: "https://media.sweetwater.com/m/products/image/4783706361ac0lzSnlIWUNNOu9oq9oZmLcundYHy.jpg?ha=47837063618f5f42b98ccda358295e3517963ca6&quality=82&width=750",
-        detalle: "instrumento_AC005.html",
+        detalle: "instrumentos/instrumento_AC005.html",
         formato: "Dunlop · Trigger"
     },
     {
@@ -589,7 +589,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 8990,
         descripcion: "Afinador cromático de clip, pantalla giratoria.",
         imagen: "https://www.stewmac.com/globalassets/product-images/m000000/m000200/m000227-snark-sn-5-guitar-bass-and-violin-tuner/0819-1-onwhite-1100.jpg?hash=637666956360000000",
-        detalle: "instrumento_AC006.html",
+        detalle: "instrumentos/instrumento_AC006.html",
         formato: "Snark · SN-5"
     },
     {
@@ -603,7 +603,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 12990,
         descripcion: "Cable trenzado, conectores dorados, 3 metros.",
         imagen: "https://www.jrrshop.com/media/catalog/product/cache/1/small_image/300x300/74a4a449a69aa4085172589406c2c80b/m/o/monsters100.jpg",
-        detalle: "instrumento_AC007.html",
+        detalle: "instrumentos/instrumento_AC007.html",
         formato: "Monster · S100-I-3"
     },
     {
@@ -617,7 +617,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 17990,
         descripcion: "Cable trenzado, conectores dorados, 6 metros.",
         imagen: "https://media.sweetwater.com/api/i/version-16a9f2637d2adc3b8c655372cfa40a13a86367d8__q-82__w-750__hmac-2a4b58a50daec0d82df8eff53c377f06c563d5c4/images/items/750/S100I12-large.jpg",
-        detalle: "instrumento_AC008.html",
+        detalle: "instrumentos/instrumento_AC008.html",
         formato: "Monster · S100-I-6"
     },
     {
@@ -631,7 +631,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 22990,
         descripcion: "Soporte plegable con enganche automático.",
         imagen: "https://media.sweetwater.com/m/products/image/ed65ce4659veTZXppqJsmgHW9ldFfEAjIuQ2wHL0.jpg?ha=ed65ce4659c107a7defc4d76bacd5e107992aead&quality=82&width=750",
-        detalle: "instrumento_AC009.html",
+        detalle: "instrumentos/instrumento_AC009.html",
         formato: "Hercules · GS302B"
     },
     {
@@ -645,7 +645,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 18990,
         descripcion: "Montaje a pared, enganche automático.",
         imagen: "https://media.sweetwater.com/m/products/image/4a311a3438lA3LIpqoOk2C11hQ3jbK69sXlfEWNP.jpg?ha=4a311a3438876c0274686a8f9548281e57a36cf9&quality=82&width=750",
-        detalle: "instrumento_AC010.html",
+        detalle: "instrumentos/instrumento_AC010.html",
         formato: "Hercules · WAH-202"
     },
     {
@@ -659,7 +659,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 149990,
         descripcion: "1 entrada XLR+instrumento, 2 salidas, 24bit/192kHz.",
         imagen: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_56/566673/18482062_800.jpg",
-        detalle: "instrumento_ES001.html",
+        detalle: "instrumentos/instrumento_ES001.html",
         formato: "Focusrite · Scarlett Solo"
     },
     {
@@ -673,7 +673,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 79990,
         descripcion: "Circumaurales, respuesta 15Hz-20kHz.",
         imagen: "https://media.sweetwater.com/m/products/image/4734fca7e4aIsvM2CIGwNbFzvHBXuJwTXiSXZ82w.jpg?ha=4734fca7e42edbb31a5a44e518025d5d8f2a03d0&quality=82&width=750",
-        detalle: "instrumento_ES002.html",
+        detalle: "instrumentos/instrumento_ES002.html",
         formato: "Audio-Tech. · ATH-M20x"
     },
     {
@@ -687,7 +687,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 219990,
         descripcion: "Referencia de industria, sonido neutro y detallado.",
         imagen: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_33/331905/9592876_800.jpg",
-        detalle: "instrumento_ES003.html",
+        detalle: "instrumentos/instrumento_ES003.html",
         formato: "Audio-Tech. · ATH-M50x"
     },
     {
@@ -701,7 +701,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 349990,
         descripcion: "Altavoz activo, respuesta plana, ideal mezcla.",
         imagen: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_31/313033/7028656_800.jpg",
-        detalle: "instrumento_ES004.html",
+        detalle: "instrumentos/instrumento_ES004.html",
         formato: "Yamaha · HS5"
     },
     {
@@ -715,7 +715,7 @@ const PRODUCTOS_INSTRUMENTOS = [
         precio: 14990,
         descripcion: "Doble malla, brazo flexible con clip.",
         imagen: "https://www.bhphotovideo.com/images/fb/sennheiser_003132_close_talking_protection_with_gooseneck_1392339.jpg",
-        detalle: "instrumento_ES005.html",
+        detalle: "instrumentos/instrumento_ES005.html",
         formato: "Sennheiser · MZP 40"
     },
 ];
