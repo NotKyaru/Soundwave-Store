@@ -259,6 +259,110 @@ button {
     background-color: #1f5c47;
 }
 
+/* ==========================================================================
+   PÁGINAS DE DETALLE DE NOTICIA (noticia-detalle-1 al 4)
+   ========================================================================== */
+.noticia-completa {
+    padding: 1.5rem;
+    background: #ffffff;
+    border: 2px solid #D9D4C8;
+    border-top: 4px solid #3D6B5C;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+.noticia-completa header {
+    padding: 0 0 1rem;
+    background: transparent;
+    border-bottom: 1px solid #D9D4C8;
+    color: inherit;
+    margin-bottom: 1.5rem;
+}
+
+.noticia-completa header .etiqueta {
+    display: inline-block;
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #3D6B5C;
+    text-transform: uppercase;
+}
+
+.noticia-completa header h1 {
+    margin: 0 0 0.5rem;
+    font-size: 1.85rem;
+    line-height: 1.2;
+    color: #1B2A41;
+}
+
+.noticia-completa header time {
+    font-size: 0.9rem;
+    color: #5B6472;
+}
+
+.noticia-completa figure {
+    margin: 0 0 1.5rem;
+    padding: 0.5rem;
+    background: #F6F4EF;
+    border: 1px solid #D9D4C8;
+    border-radius: 0.4rem;
+}
+
+.noticia-completa figure img {
+    width: 100%;
+    max-height: 28rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.noticia-completa figcaption {
+    margin-top: 0.5rem;
+    padding: 0 0.25rem;
+    font-size: 0.85rem;
+    color: #5B6472;
+    font-style: italic;
+}
+
+.noticia-completa p {
+    line-height: 1.6;
+    color: #313131;
+    margin: 0 0 1rem;
+}
+
+.noticia-completa h2 {
+    margin: 1.5rem 0 0.75rem;
+    font-size: 1.3rem;
+    color: #1B2A41;
+    border-bottom: 2px solid #3D6B5C;
+    padding-bottom: 0.4rem;
+}
+
+.noticia-completa ul {
+    margin: 0 0 1.5rem;
+    padding-left: 1.25rem;
+    line-height: 1.6;
+    color: #313131;
+}
+
+.noticia-completa ul li {
+    margin-bottom: 0.35rem;
+}
+
+.noticia-completa a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #3D6B5C;
+    border-radius: 0.4rem;
+    text-decoration: none;
+}
+
+.noticia-completa a:hover {
+    background-color: #2F5548;
+}
+
 .contador-carrito {
     display: inline-block;
     min-width: 1.35rem;
