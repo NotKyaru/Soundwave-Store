@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explora el catálogo completo de álbumes de SoundWave">
+    <meta name="description" content="Explora el catálogo completo de SoundWave: álbumes, instrumentos y equipos, todo en un solo lugar">
     <title>Catálogo | SoundWave</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
@@ -44,20 +44,26 @@
 
         <h1 class="titulo-producto">Catálogo completo</h1>
         <p class="nota-compra">
-            Pasa el mouse (o navega con Tab) sobre un álbum para ver su resumen y la lista de pistas.
+            Álbumes, instrumentos y equipos en un solo catálogo. Busca por nombre o filtra por categoría,
+            y pasa el mouse (o navega con Tab) sobre un producto para ver su ficha resumida.
             Haz clic para abrir su ficha completa.
         </p>
 
-        <div class="filtros-etiquetas" id="filtros-etiquetas" role="group" aria-label="Filtrar por etiqueta">
+        <div class="buscador-catalogo">
+            <label for="buscador-catalogo" class="visualmente-oculto">Buscar en el catálogo por nombre</label>
+            <input type="search" id="buscador-catalogo" placeholder="Buscar por nombre, artista o marca…" autocomplete="off">
+        </div>
+
+        <div class="filtros-etiquetas" id="filtros-etiquetas" role="group" aria-label="Filtrar por categoría">
             <!-- Los chips de filtro se generan dinámicamente en assets/js/catalogo.js -->
         </div>
 
         <div class="disposicion-catalogo">
-            <ul class="lista-catalogo" id="lista-catalogo" aria-label="Álbumes del catálogo">
-                <!-- Las filas se generan dinámicamente desde assets/js/productos.js -->
+            <ul class="lista-catalogo" id="lista-catalogo" aria-label="Álbumes, instrumentos y equipos del catálogo">
+                <!-- Las filas se generan dinámicamente desde assets/js/productos.js y assets/js/instrumentos.js -->
             </ul>
 
-            <aside class="panel-vista-previa" id="panel-vista-previa" aria-live="polite" aria-label="Vista previa del álbum">
+            <aside class="panel-vista-previa" id="panel-vista-previa" aria-live="polite" aria-label="Vista previa del producto">
                 <!-- El contenido se genera dinámicamente en assets/js/catalogo.js -->
             </aside>
         </div>
@@ -68,6 +74,7 @@
     </footer>
 
     <script src="assets/js/productos.js"></script>
+    <script src="assets/js/instrumentos.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/catalogo.js"></script>
     <script src="assets/js/menu.js"></script>

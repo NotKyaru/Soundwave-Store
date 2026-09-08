@@ -609,6 +609,12 @@ img {
     text-decoration: none;
 }
 
+.boton-carrito:disabled {
+    background-color: #D9D4C8;
+    color: #5B6472;
+    cursor: not-allowed;
+}
+
 .boton-carrito:hover {
     background-color: #2F5548;
 }
@@ -773,6 +779,12 @@ img {
     color: #5B6472;
 }
 
+.carrito-stock-nota {
+    margin: 0.35rem 0 0;
+    font-size: 0.75rem;
+    color: #5B6472;
+}
+
 .control-cantidad {
     display: inline-flex;
     align-items: center;
@@ -898,6 +910,27 @@ img {
 }
 
 /* --- Catálogo --- */
+
+.buscador-catalogo {
+    margin: 0 0 1rem;
+}
+
+.buscador-catalogo input[type="search"] {
+    width: 100%;
+    max-width: 26rem;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #1B2A41;
+    background-color: #ffffff;
+    border: 1px solid #D9D4C8;
+    border-radius: 0.4rem;
+}
+
+.buscador-catalogo input[type="search"]:focus {
+    outline: none;
+    border-color: #3D6B5C;
+}
 
 .filtros-etiquetas {
     display: flex;

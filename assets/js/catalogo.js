@@ -1,62 +1,80 @@
-// catalogo.js — Lista de álbumes con panel de vista previa (inspirado en
-// la lista de la tienda de Steam): al pasar el mouse o el foco por una
-// fila se actualiza el panel de la derecha con el resumen y las pistas
-// del álbum. Los datos vienen de assets/js/productos.js.
+// catalogo.js — Catálogo unificado de SoundWave: combina los álbumes
+// (assets/js/productos.js) y los instrumentos y equipos (assets/js/instrumentos.js)
+// en una sola lista, con buscador por nombre/artista/marca y filtro por
+// categoría. Mismo patrón de lista + panel de vista previa inspirado en
+// Steam que este archivo ya usaba cuando solo mostraba álbumes.
 
 document.addEventListener("DOMContentLoaded", () => {
     const listaCatalogo = document.querySelector("#lista-catalogo");
     const filtrosEtiquetas = document.querySelector("#filtros-etiquetas");
     const panel = document.querySelector("#panel-vista-previa");
+    const buscador = document.querySelector("#buscador-catalogo");
 
     if (!listaCatalogo || !panel) return;
 
-    let etiquetaActiva = null;
+    let categoriaActiva = null;
+    let terminoBusqueda = "";
 
     function formatearClp(numero) {
         return "$" + numero.toLocaleString("es-CL");
     }
 
-    function obtenerEtiquetasFiltrables() {
-        const conteo = new Map();
+    function normalizar(texto) {
+        return texto
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase();
+    }
 
-        PRODUCTOS_SOUNDWAVE.forEach((producto) => {
-            producto.etiquetas.forEach((etiqueta) => {
-                conteo.set(etiqueta, (conteo.get(etiqueta) || 0) + 1);
-            });
+    function construirCatalogoCompleto() {
+        const albumes = (typeof PRODUCTOS_SOUNDWAVE !== "undefined" ? PRODUCTOS_SOUNDWAVE : [])
+            .map((producto) => ({ ...producto, tipo: "album", categoria: "Álbumes" }));
+        const instrumentos = (typeof PRODUCTOS_INSTRUMENTOS !== "undefined" ? PRODUCTOS_INSTRUMENTOS : [])
+            .map((producto) => ({ ...producto, tipo: "instrumento" }));
+        return [...albumes, ...instrumentos];
+    }
+
+    const CATALOGO_COMPLETO = construirCatalogoCompleto();
+
+    function textoBuscableDe(producto) {
+        const campos = producto.tipo === "album"
+            ? [producto.titulo, producto.artista, ...producto.etiquetas]
+            : [producto.titulo, producto.marca, producto.modelo, producto.subcategoria];
+        return normalizar(campos.join(" "));
+    }
+
+    function obtenerCategorias() {
+        const vistas = [];
+        CATALOGO_COMPLETO.forEach((producto) => {
+            if (!vistas.includes(producto.categoria)) vistas.push(producto.categoria);
         });
-
-        // Solo interesan las etiquetas que NO están en todos los álbumes:
-        // filtrar por "Soundfont" o "SM64" no serviría de nada porque
-        // aparecen en los 6 discos.
-        return [...conteo.entries()]
-            .filter(([, cantidad]) => cantidad < PRODUCTOS_SOUNDWAVE.length)
-            .map(([etiqueta]) => etiqueta);
+        return vistas;
     }
 
     function renderizarFiltros() {
-        const etiquetas = obtenerEtiquetasFiltrables();
+        const categorias = obtenerCategorias();
 
         const chipTodos = document.createElement("button");
         chipTodos.type = "button";
         chipTodos.className = "filtro-etiqueta";
         chipTodos.textContent = "Todos";
-        chipTodos.setAttribute("aria-pressed", String(etiquetaActiva === null));
-        if (etiquetaActiva === null) chipTodos.classList.add("activo");
+        chipTodos.setAttribute("aria-pressed", String(categoriaActiva === null));
+        if (categoriaActiva === null) chipTodos.classList.add("activo");
         chipTodos.addEventListener("click", () => {
-            etiquetaActiva = null;
+            categoriaActiva = null;
             actualizarVista();
         });
         filtrosEtiquetas.appendChild(chipTodos);
 
-        etiquetas.forEach((etiqueta) => {
+        categorias.forEach((categoria) => {
             const chip = document.createElement("button");
             chip.type = "button";
             chip.className = "filtro-etiqueta";
-            chip.textContent = etiqueta;
-            chip.setAttribute("aria-pressed", String(etiquetaActiva === etiqueta));
-            if (etiquetaActiva === etiqueta) chip.classList.add("activo");
+            chip.textContent = categoria;
+            chip.setAttribute("aria-pressed", String(categoriaActiva === categoria));
+            if (categoriaActiva === categoria) chip.classList.add("activo");
             chip.addEventListener("click", () => {
-                etiquetaActiva = etiquetaActiva === etiqueta ? null : etiqueta;
+                categoriaActiva = categoriaActiva === categoria ? null : categoria;
                 actualizarVista();
             });
             filtrosEtiquetas.appendChild(chip);
@@ -69,12 +87,16 @@ document.addEventListener("DOMContentLoaded", () => {
         fila.className = "fila-catalogo";
         fila.dataset.id = producto.id;
 
+        const etiquetasFila = producto.tipo === "album"
+            ? producto.etiquetas.slice(0, 3)
+            : [producto.subcategoria, producto.marca];
+
         fila.innerHTML = `
             <img class="fila-portada" src="${producto.imagen}" alt="${producto.titulo}">
             <div class="fila-info">
                 <h3 class="fila-titulo">${producto.titulo}</h3>
                 <ul class="fila-etiquetas">
-                    ${producto.etiquetas.map((etiqueta) => `<li>${etiqueta}</li>`).join("")}
+                    ${etiquetasFila.map((etiqueta) => `<li>${etiqueta}</li>`).join("")}
                 </ul>
             </div>
             <p class="fila-precio">${formatearClp(producto.precio)}</p>
@@ -93,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
         renderizarPanel(producto);
     }
 
-    function renderizarPanel(producto) {
+    function renderizarPanelAlbum(producto) {
         panel.innerHTML = `
             <img class="portada-ficha" src="${producto.imagen}" alt="Portada de ${producto.titulo}">
             <h2 class="panel-titulo">${producto.titulo}</h2>
@@ -129,25 +151,71 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
+    function renderizarPanelInstrumento(producto) {
+        const disponibilidad = producto.stock > 0
+            ? `<strong>Disponible</strong><span>(${producto.stock} unidades en stock)</span>`
+            : `<strong>Sin stock</strong><span>por ahora</span>`;
+
+        panel.innerHTML = `
+            <img class="portada-ficha" src="${producto.imagen}" alt="${producto.titulo}">
+            <h2 class="panel-titulo">${producto.titulo}</h2>
+            <p class="nota-compra">${producto.marca} · ${producto.modelo}</p>
+            <p class="resumen-ficha">${producto.descripcion}</p>
+            <p class="reseñas">
+                Disponibilidad:
+                ${disponibilidad}
+            </p>
+            <ul class="etiquetas">
+                <li>${producto.categoria}</li>
+                <li>${producto.subcategoria}</li>
+            </ul>
+            <div class="acciones-compra">
+                <p class="precio">${formatearClp(producto.precio)}</p>
+                <a class="boton-ver-ficha" href="${producto.detalle}">Ver ficha completa</a>
+            </div>
+        `;
+    }
+
+    function renderizarPanel(producto) {
+        if (producto.tipo === "album") {
+            renderizarPanelAlbum(producto);
+        } else {
+            renderizarPanelInstrumento(producto);
+        }
+    }
+
+    function obtenerProductosFiltrados() {
+        return CATALOGO_COMPLETO.filter((producto) => {
+            const coincideCategoria = categoriaActiva === null || producto.categoria === categoriaActiva;
+            const coincideBusqueda = terminoBusqueda === "" || textoBuscableDe(producto).includes(terminoBusqueda);
+            return coincideCategoria && coincideBusqueda;
+        });
+    }
+
     function actualizarVista() {
         listaCatalogo.innerHTML = "";
         filtrosEtiquetas.innerHTML = "";
         renderizarFiltros();
 
-        const productosFiltrados = etiquetaActiva
-            ? PRODUCTOS_SOUNDWAVE.filter((producto) => producto.etiquetas.includes(etiquetaActiva))
-            : PRODUCTOS_SOUNDWAVE;
+        const filtrados = obtenerProductosFiltrados();
 
-        productosFiltrados.forEach((producto) => {
+        filtrados.forEach((producto) => {
             listaCatalogo.appendChild(crearFilaCatalogo(producto));
         });
 
-        if (productosFiltrados.length > 0) {
+        if (filtrados.length > 0) {
             const primeraFila = listaCatalogo.querySelector(".fila-catalogo");
-            seleccionarFila(primeraFila, productosFiltrados[0]);
+            seleccionarFila(primeraFila, filtrados[0]);
         } else {
-            panel.innerHTML = "<p class=\"nota-compra\">No hay álbumes con esa etiqueta todavía.</p>";
+            panel.innerHTML = '<p class="nota-compra">No hay productos que coincidan con tu búsqueda.</p>';
         }
+    }
+
+    if (buscador) {
+        buscador.addEventListener("input", (evento) => {
+            terminoBusqueda = normalizar(evento.target.value.trim());
+            actualizarVista();
+        });
     }
 
     actualizarVista();
