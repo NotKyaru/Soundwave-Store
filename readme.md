@@ -1,4 +1,4 @@
-# 🎸 SoundWave Store
+# SoundWave Store
 
 Tienda en línea de instrumentos musicales, equipos de sonido y álbumes, desarrollada como proyecto académico para el curso **DSY1104 – Desarrollo FullStack II**. El proyecto está inspirado en el caso de negocio **"Sonido Vivo"**: una tienda de instrumentos que necesita pasar de la venta presencial y por WhatsApp/Instagram a un catálogo online ordenado, con carrito de compras y una interfaz que funcione en celular, tablet y escritorio.
 
@@ -6,25 +6,25 @@ Tienda en línea de instrumentos musicales, equipos de sonido y álbumes, desarr
 
 ---
 
-## 📋 Tabla de contenidos
+## Tabla de contenidos
 
-- [Sobre el proyecto](#-sobre-el-proyecto)
-- [Funcionalidades](#-funcionalidades)
-- [Tecnologías](#-tecnologías)
-- [Estructura del proyecto](#-estructura-del-proyecto)
-- [Cómo ejecutarlo](#-cómo-ejecutarlo)
-- [Roadmap](#-roadmap)
-- [Autores](#-autores)
+- [Sobre el proyecto](#sobre-el-proyecto)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologías](#tecnologías)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Cómo ejecutarlo](#cómo-ejecutarlo)
+- [Roadmap](#roadmap)
+- [Autores](#autores)
 
 ---
 
-## 🛒 Sobre el proyecto
+## Sobre el proyecto
 
 Sonido Vivo es una tienda física en Viña del Mar que hoy recibe pedidos remotos por WhatsApp e Instagram y controla su inventario a mano en Excel y cuadernos. Esto genera mensajes sin responder, stock desactualizado y ventas duplicadas.
 
 SoundWave Store busca resolver ese problema entregando una experiencia de compra online: catálogo navegable, ficha de producto, carrito con reglas de stock, y vistas de autenticación, todo pensado para funcionar igual de bien en un teléfono que en un computador de escritorio.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - **Catálogo unificado** — combina instrumentos/equipos (con stock real) y álbumes digitales en una sola vista, con buscador por nombre/marca/artista y filtro por categoría.
 - **Fichas de producto** — una página de detalle por cada instrumento y álbum, con imagen, descripción, precio y disponibilidad.
@@ -33,7 +33,7 @@ SoundWave Store busca resolver ese problema entregando una experiencia de compra
 - **Vistas de autenticación** — pantallas de inicio de sesión y registro (maquetas de UI, ver [Roadmap](#-roadmap)).
 - **Contenido institucional** — secciones de blog/noticias y "Nosotros".
 
-## 🛠 Tecnologías
+## Tecnologías
 
 | Capa | Tecnología |
 |---|---|
@@ -44,7 +44,7 @@ SoundWave Store busca resolver ese problema entregando una experiencia de compra
 
 No se usan librerías ni build tools: el sitio corre abriendo los `.html` directamente o sirviéndolos con cualquier servidor estático.
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 Soundwave-Store/
@@ -70,7 +70,7 @@ Soundwave-Store/
     └── img/                 # Imágenes y logo
 ```
 
-## ▶ Cómo ejecutarlo
+## Cómo ejecutarlo
 
 No requiere instalación ni dependencias.
 
@@ -81,7 +81,7 @@ No requiere instalación ni dependencias.
 git clone https://github.com/NotKyaru/Soundwave-Store.git
 ```
 
-## 🗺 Roadmap
+## Roadmap
 
 ### Problemas que enfrentamos y cómo los resolvimos
 
@@ -107,7 +107,7 @@ El enunciado del curso pide una solución fullstack con roles de usuario, backen
 - [ ] **Despliegue en la nube** (AWS + Docker), hoy el sitio solo corre localmente.
 - [ ] Migrar el frontend a **React**, tal como exige el stack tecnológico del proyecto.
 
-## 👥 Autores
+## Autores
 
 Proyecto desarrollado en equipo para DSY1104 — Desarrollo FullStack II.
 
