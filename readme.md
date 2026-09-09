@@ -112,9 +112,8 @@ El enunciado del curso pide una solución fullstack con roles de usuario, backen
 Proyecto desarrollado en equipo para DSY1104 — Desarrollo FullStack II.
 
 - Kyaru ([@NotKyaru](https://github.com/NotKyaru))
-- dzynss / dzy
-- Enrique Gutierrez
+- Dzynss / ([@Dzynss](https://github.com/dzynss))
 
 ---
 
-<p align="center">Proyecto académico · Sin fines comerciales</p>
+<p align="center">Proyecto académico Duoc UC · Sin fines comerciales</p>
