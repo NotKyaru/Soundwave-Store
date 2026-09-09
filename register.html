@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crea tu cuenta en SoundWave">
+    <title>Crear cuenta | SoundWave</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
+    <header class="cabecera-sitio">
+        <h1 class="marca">
+            <a href="inicio.html">
+                <img src="assets/img/logo.png" alt="SoundWave" class="logo-imagen">
+            </a>
+        </h1>
+
+        <button id="boton-menu" class="boton-menu" type="button"
+                aria-label="Abrir o cerrar menu principal"
+                aria-controls="menu-principal"
+                aria-expanded="false">
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <ul class="lista-menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="login.html" class="enlace-icono" aria-label="Iniciar sesión"><svg class="icono-nav" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a></li>
+                <li><a href="carrito.html" class="enlace-icono" aria-label="Carrito"><svg class="icono-nav" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span class="contador-carrito" id="contador-carrito" hidden>0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <nav class="miga" aria-label="Migas de pan">
+            <a href="inicio.html">Inicio</a>
+            <span aria-hidden="true">›</span>
+            <span>Crear cuenta</span>
+        </nav>
+
+        <h1 class="titulo-producto">Crea tu cuenta</h1>
+        <p class="nota-compra">Completa tus datos para registrarte. Esta vista es una maqueta con fines académicos: aún no valida ni guarda tus datos.</p>
+
+        <section class="panel-autenticacion" aria-labelledby="titulo-formulario-registro">
+            <h2 id="titulo-formulario-registro" class="visualmente-oculto">Formulario de registro</h2>
+
+            <form id="formulario-registro" class="formulario-auth" action="inicio.html" method="get" novalidate>
+                <div class="campo-formulario">
+                    <label for="rut">RUT sin puntos ni guion</label>
+                    <input id="rut" name="rut" type="text" maxlength="9" aria-describedby="error-rut">
+                    <small id="error-rut" class="mensaje-error"></small>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" maxlength="50" aria-describedby="error-nombre">
+                    <small id="error-nombre" class="mensaje-error"></small>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="correo">Correo</label>
+                    <input id="correo" name="correo" type="email" aria-describedby="error-correo">
+                    <small id="error-correo" class="mensaje-error"></small>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input id="fecha-nacimiento" name="fechaNacimiento" type="date" aria-describedby="error-fecha">
+                    <small id="error-fecha" class="mensaje-error"></small>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="contrasena">Contraseña</label>
+                    <input id="contrasena" name="contrasena" type="password" aria-describedby="error-contrasena">
+                    <small id="error-contrasena" class="mensaje-error"></small>
+                </div>
+
+                <button type="submit" class="boton-auth">Crear cuenta</button>
+                <p id="mensaje-exito" role="status"></p>
+            </form>
+
+            <p class="enlace-auth-alterno">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </section>
+    </main>
+
+    <footer class="pie-sitio">
+        <p>SoundWave © 2026 · Todos los derechos reservados · Contacto: <a href="mailto:SoundWave@SWBusiness.cl">SoundWave@SWBusiness.cl</a> · Proyecto académico DSY1104 · Desarrollo FullStack II</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>

@@ -58,6 +58,14 @@ function actualizarContadorCarritoSW() {
     const unidades = contarUnidadesCarritoSW();
     contador.textContent = String(unidades);
     contador.hidden = unidades === 0;
+
+    const enlaceCarrito = contador.closest("a");
+    if (enlaceCarrito) {
+        enlaceCarrito.setAttribute(
+            "aria-label",
+            unidades === 0 ? "Carrito" : `Carrito, ${unidades} producto${unidades === 1 ? "" : "s"}`
+        );
+    }
 }
 
 function mostrarAvisoSW(mensaje) {
